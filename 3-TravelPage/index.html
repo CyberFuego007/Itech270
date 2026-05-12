@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outback Escape Travel Agency</title>
+
+    <style>
+        body {
+            background: linear-gradient(to bottom, #dff6ff, #bde0fe, #fefae0);
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            color: #222222;
+        }
+
+        header {
+            background-color: #012169;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            border-radius: 12px;
+            border-bottom: 8px solid #e4002b;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 42px;
+        }
+
+        section {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 25px;
+            max-width: 1200px;
+            margin: 30px auto;
+        }
+
+        article {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-left: 8px solid #ffcd00;
+            border-radius: 12px;
+            box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .about {
+            grid-row: span 3;
+            border-left: 8px solid #00843d;
+        }
+
+        h3 {
+            color: #012169;
+            border-bottom: 3px solid #ffcd00;
+            padding-bottom: 6px;
+        }
+
+        p {
+            line-height: 1.7;
+        }
+
+        figure {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        img {
+            border: 6px solid #ffcd00;
+            border-radius: 14px;
+            padding: 6px;
+            background-color: white;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
+        }
+
+        figcaption {
+            margin-top: 8px;
+            font-weight: bold;
+            color: #012169;
+        }
+
+        video {
+            display: block;
+            width: 350px;
+            margin: 20px auto;
+            padding: 8px;
+            background-color: white;
+            border: 8px solid #00843d;
+            border-radius: 14px;
+            box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            background-color: #012169;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            border-radius: 12px;
+            border-top: 6px solid #e4002b;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Outback Escape Travel Agency</h1>
+    </header>
+
+    <section>
+
+        <article class="about">
+            <h3>About Our Travel Agency</h3>
+
+            <p>
+                Outback Escape Travel Agency was created with one goal in mind:
+                to help travelers experience the beauty, excitement, and wonder
+                of Australia. We focus on unforgettable trips that include famous
+                landmarks, ocean views, city adventures, and relaxing beach escapes.
+            </p>
+
+            <p>
+                Our travel agency is designed for people who want more than just
+                a vacation. We help visitors plan memorable experiences that include
+                sightseeing, local culture, beautiful scenery, and exciting places
+                across Australia.
+            </p>
+
+            <h3>Meet Our Team</h3>
+
+            <figure>
+                <img src="images/founder.png"
+                     alt="Cartoon founder of Outback Escape Travel Agency"
+                     width="220">
+                <figcaption>Founder: Jack Outback</figcaption>
+            </figure>
+
+            <p>
+                Jack Outback is the founder of Outback Escape Travel Agency.
+                He has spent years exploring Australia and wanted to help others
+                discover the same amazing places he loves. Jack enjoys planning
+                adventures that are fun, safe, and full of unforgettable views.
+            </p>
+
+            <figure>
+                <img src="images/secretary.png"
+                     alt="Cartoon secretary of Outback Escape Travel Agency"
+                     width="220">
+                <figcaption>Secretary: Sophie Sunshine</figcaption>
+            </figure>
+
+            <p>
+                Sophie Sunshine is the secretary and travel assistant for Outback
+                Escape Travel Agency. She helps organize trips, answer questions,
+                and make sure every traveler feels prepared before their journey.
+                Sophie’s goal is to make each vacation simple, smooth, and exciting.
+            </p>
+        </article>
+
+        <article>
+            <h3>A Short History of Australia</h3>
+
+            <p>
+                Australia has a long and rich history that began with Aboriginal
+                and Torres Strait Islander peoples, who have lived on the continent
+                for tens of thousands of years. Their cultures, languages, and
+                traditions remain an important part of Australia’s identity today.
+            </p>
+
+            <p>
+                European settlement began in 1788 when the First Fleet arrived in
+                Sydney Cove. Over time, Australia developed into a modern nation
+                known for its wildlife, beaches, cities, and unique culture.
+                Today, it is one of the world’s most popular travel destinations.
+            </p>
+            <figure>
+                <img src="images/australia.png"
+                    alt="Landscape view of Australia"
+                    width="350">
+
+                <figcaption>
+                    The natural beauty of Australia.
+                </figcaption>
+            </figure>
+        </article>
+
+        <article>
+            <h3>Sydney Harbor at Night</h3>
+
+            <p>
+                Sydney Harbor is one of Australia’s most famous landmarks and one
+                of the best places to visit at night. The lights from the city
+                reflect across the water, creating a beautiful view of the skyline.
+                Visitors can enjoy the waterfront, restaurants, entertainment, and
+                the famous Sydney Opera House.
+            </p>
+
+            <video src="videos/sydney-harbor.mp4" controls>
+                Your browser does not support the video tag.
+            </video>
+        </article>
+
+        <article>
+            <h3>Aerial View of Bondi Beach</h3>
+
+            <p>
+                Bondi Beach is known for its bright blue water, sandy shoreline,
+                and active beach culture. Travelers visit Bondi to swim, surf,
+                relax in the sun, and enjoy the natural beauty of Australia’s
+                coastline. From above, Bondi Beach shows why Australia is such
+                a popular destination for beach lovers.
+            </p>
+
+            <video src="videos/bondi-beach.mp4" controls>
+                Your browser does not support the video tag.
+            </video>
+        </article>
+
+    </section>
+
+    <footer>
+        <p>&copy; Lee DeVault 2026</p>
+    </footer>
+
+</body>
+</html>

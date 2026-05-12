@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New User Form</title>
+
+    <style>
+
+        body {
+            background: linear-gradient(to bottom, #fdf6e3, #d9f99d);
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            color: #222222;
+        }
+
+        header {
+            background-color: #064e3b;
+            color: #facc15;
+            text-align: center;
+            padding: 30px;
+            border-radius: 12px;
+            border-bottom: 8px solid #facc15;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+            font-size: 42px;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        section {
+            max-width: 850px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.2);
+            border-left: 8px solid #064e3b;
+        }
+
+        h2 {
+            color: #064e3b;
+            border-bottom: 3px solid #facc15;
+            padding-bottom: 8px;
+        }
+
+        p {
+            line-height: 1.7;
+        }
+
+        .note {
+            background-color: #fef9c3;
+            border-left: 6px solid #facc15;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: grid;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #064e3b;
+        }
+
+        label em {
+            font-style: italic;
+            color: #666666;
+            font-weight: normal;
+        }
+
+        input,
+        select,
+        textarea {
+            padding: 12px;
+            border: 2px solid #d1d5db;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        .checkbox-row {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #064e3b;
+            color: #facc15;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            padding: 15px;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #047857;
+        }
+
+        footer {
+            background-color: #064e3b;
+            color: #facc15;
+            text-align: center;
+            padding: 15px;
+            border-radius: 12px;
+            margin-top: 30px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Free Ponies and Steeds</h1>
+
+        <p>
+            A fictional website inspired by the idea of modern-day ponies
+            and the spirit of adventure from <em>Powwow Highway</em>.
+        </p>
+    </header>
+
+    <section>
+
+        <h2>Join the Free Steeds Program</h2>
+
+        <p>
+            Welcome to Free Ponies and Steeds, a fictional website where tribal
+            members can sign up to receive information about free cars, also
+            known here as modern ponies or steel steeds. Inspired by the themes
+            of freedom, travel, humor, and movement from the movie
+            <em>Powwow Highway</em>.
+        </p>
+
+        <p>
+            This form uses that same idea in a fun way by
+            treating cars like modern steeds for people ready to ride toward new
+            opportunities.
+        </p>
+
+        <div class="note">
+            Required fields must be completed before submitting the form.
+            Optional fields are marked in italic text.
+        </div>
+
+        <form method="GET" action="./response.html">
+
+            <label for="first-name">
+                First Name
+            </label>
+
+            <input type="text"
+                   id="first-name"
+                   name="first-name"
+                   required>
+
+            <label for="last-name">
+                Last Name
+            </label>
+
+            <input type="text"
+                   id="last-name"
+                   name="last-name"
+                   required>
+
+            <label for="email">
+                Email
+            </label>
+
+            <input type="email"
+                   id="email"
+                   name="email"
+                   required>
+
+            <label for="password">
+                Password
+            </label>
+
+            <input type="password"
+                   id="password"
+                   name="password"
+                   required>
+
+            <label for="age">
+                Age <em>*Optional</em>
+            </label>
+
+            <input type="number"
+                   id="age"
+                   name="age">
+
+            <label for="address">
+                Address <em>*Optional</em>
+            </label>
+
+            <input type="text"
+                   id="address"
+                   name="address">
+
+            <label for="city">
+                City <em>*Optional</em>
+            </label>
+
+            <input type="text"
+                   id="city"
+                   name="city">
+
+            <label for="state">
+                State <em>*Optional</em>
+            </label>
+
+            <input type="text"
+                   id="state"
+                   name="state">
+
+            <label for="zipcode">
+                Zipcode <em>*Optional</em>
+            </label>
+
+            <input type="number"
+                   id="zipcode"
+                   name="zipcode">
+
+            <label for="tribal-affiliation">
+                Tribal Affiliation
+            </label>
+
+            <select id="tribal-affiliation"
+                    name="tribal-affiliation"
+                    required>
+
+                <option value="">
+                    Choose one
+                </option>
+
+                <option value="leech-lake-band">
+                    Leech Lake Band of Ojibwe
+                </option>
+
+                <option value="red-lake-nation">
+                    Red Lake Nation
+                </option>
+
+                <option value="white-earth-nation">
+                    White Earth Nation
+                </option>
+
+                <option value="fond-du-lac-band">
+                    Fond du Lac Band
+                </option>
+
+                <option value="mille-lacs-band">
+                    Mille Lacs Band
+                </option>
+
+            </select>
+
+            <label for="reason">
+                Reason for Joining <em>*Optional</em>
+            </label>
+
+            <textarea id="reason"
+                      name="reason"
+                      placeholder="Tell us why you want to join the Free Ponies and Steeds program."></textarea>
+
+            <div class="checkbox-row">
+
+                <input type="checkbox"
+                       id="terms"
+                       name="terms"
+                       required>
+
+                <label for="terms">
+                    I agree to the terms and conditions.
+                </label>
+
+            </div>
+
+            <input type="submit"
+                   value="Submit">
+
+        </form>
+
+    </section>
+
+    <footer>
+        <p>&copy; Lee DeVault 2026</p>
+    </footer>
+
+</body>
+</html>
